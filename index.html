@@ -1,1 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f5f7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0b0f">
+  <meta name="description" content="Privacy Policy for the Rhysen iOS app.">
+  <title>Privacy Policy — Rhysen</title>
+  <style>
+    :root {
+      --page: #f5f5f7;
+      --page-glow: rgba(66, 133, 244, 0.16);
+      --surface: rgba(255, 255, 255, 0.74);
+      --surface-strong: rgba(255, 255, 255, 0.92);
+      --text: #1d1d1f;
+      --secondary: #6e6e73;
+      --border: rgba(0, 0, 0, 0.08);
+      --accent: #0071e3;
+      --accent-soft: rgba(0, 113, 227, 0.1);
+      --success: #248a3d;
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+      --radius: 28px;
+    }
 
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #0b0b0f;
+        --page-glow: rgba(64, 156, 255, 0.2);
+        --surface: rgba(30, 30, 34, 0.72);
+        --surface-strong: rgba(36, 36, 40, 0.92);
+        --text: #f5f5f7;
+        --secondary: #a1a1a6;
+        --border: rgba(255, 255, 255, 0.1);
+        --accent: #2997ff;
+        --accent-soft: rgba(41, 151, 255, 0.14);
+        --success: #30d158;
+        --shadow: 0 22px 60px rgba(0, 0, 0, 0.32);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% -10%, var(--page-glow), transparent 34rem),
+        var(--page);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .navigation {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--border);
+      background: color-mix(in srgb, var(--page) 76%, transparent);
+      -webkit-backdrop-filter: saturate(180%) blur(22px);
+      backdrop-filter: saturate(180%) blur(22px);
+    }
+
+    .navigation-inner {
+      width: min(100% - 40px, 980px);
+      height: 56px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text);
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      color: white;
+      background: linear-gradient(145deg, #409cff, #5856d6);
+      box-shadow: 0 5px 14px rgba(45, 114, 210, 0.28);
+      font-size: 15px;
+      font-weight: 750;
+    }
+
+    .navigation-label {
+      color: var(--secondary);
+      font-size: 14px;
+      font-weight: 550;
+    }
+
+    main {
+      width: min(100% - 40px, 880px);
+      margin: 0 auto;
+      padding: 88px 0 96px;
+    }
+
+    .hero {
+      max-width: 760px;
+      margin-bottom: 52px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 8vw, 72px);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+      margin: 24px 0 0;
+      color: var(--secondary);
+      font-size: clamp(20px, 3vw, 25px);
+      line-height: 1.35;
+      letter-spacing: -0.025em;
+    }
+
+    .updated {
+      margin: 20px 0 0;
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 0 0 52px;
+    }
+
+    .summary-card,
+    .policy-card {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      -webkit-backdrop-filter: blur(22px) saturate(150%);
+      backdrop-filter: blur(22px) saturate(150%);
+      box-shadow: var(--shadow);
+    }
+
+    .summary-card {
+      min-height: 160px;
+      padding: 22px;
+      border-radius: 24px;
+    }
+
+    .summary-icon {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+      border-radius: 13px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-size: 18px;
+      font-weight: 750;
+    }
+
+    .summary-card strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 17px;
+      letter-spacing: -0.02em;
+    }
+
+    .summary-card span {
+      color: var(--secondary);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .policy-stack {
+      display: grid;
+      gap: 18px;
+    }
+
+    .policy-card {
+      padding: clamp(25px, 5vw, 42px);
+      border-radius: var(--radius);
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(25px, 4vw, 32px);
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+    }
+
+    h3 {
+      margin: 28px 0 8px;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 8px 0;
+      padding-left: 3px;
+    }
+
+    .secondary {
+      color: var(--secondary);
+    }
+
+    .permission-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .permission {
+      display: grid;
+      grid-template-columns: minmax(120px, 0.34fr) 1fr;
+      gap: 18px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--surface-strong);
+    }
+
+    .permission strong {
+      letter-spacing: -0.015em;
+    }
+
+    .permission span {
+      color: var(--secondary);
+      font-size: 15px;
+    }
+
+    .notice {
+      margin-top: 24px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--success);
+      border-radius: 14px;
+      background: color-mix(in srgb, var(--success) 9%, transparent);
+    }
+
+    footer {
+      width: min(100% - 40px, 880px);
+      margin: 0 auto;
+      padding: 0 0 calc(44px + env(safe-area-inset-bottom));
+      color: var(--secondary);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding-top: 60px;
+      }
+
+      .summary {
+        grid-template-columns: 1fr;
+      }
+
+      .summary-card {
+        min-height: 0;
+      }
+
+      .permission {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navigation" aria-label="Primary navigation">
+    <div class="navigation-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span>Rhysen</span>
+      </div>
+      <span class="navigation-label">Privacy Policy</span>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Your data, clearly explained</p>
+      <h1>Privacy comes first.</h1>
+      <p class="hero-copy">Rhysen is designed to organize your day without building a profile about you. Your personal app data stays under your control.</p>
+      <p class="updated">Effective August 25, 2026</p>
+    </header>
+
+    <section class="summary" aria-label="Privacy summary">
+      <article class="summary-card">
+        <div class="summary-icon" aria-hidden="true">✓</div>
+        <strong>No advertising</strong>
+        <span>Rhysen contains no third-party advertising or ad tracking.</span>
+      </article>
+      <article class="summary-card">
+        <div class="summary-icon" aria-hidden="true">⌂</div>
+        <strong>Local by default</strong>
+        <span>Your tasks, habits, and work settings are stored on your device.</span>
+      </article>
+      <article class="summary-card">
+        <div class="summary-icon" aria-hidden="true">◎</div>
+        <strong>Permission-based</strong>
+        <span>Sensitive features are used only after you grant system permission.</span>
+      </article>
+    </section>
+
+    <div class="policy-stack">
+      <section class="policy-card">
+        <h2>Overview</h2>
+        <p>This Privacy Policy explains how the Rhysen iOS app handles information when you use its task, reminder, habit, assistant, work-planning, and location-based features.</p>
+        <p>Rhysen does not require an account and does not operate a developer-controlled server that receives your tasks, habits, work information, voice recordings, or location history.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>Information stored on your device</h2>
+        <p>Rhysen may store information you choose to enter or create, including:</p>
+        <ul>
+          <li>Tasks, reminders, subtasks, dates, times, and completion history.</li>
+          <li>Habits, routines, streaks, timers, counters, and reminder preferences.</li>
+          <li>Work schedules, job names, pay settings, commute details, addresses, and geofence coordinates.</li>
+          <li>Appearance, notification, and other app preferences.</li>
+          <li>Assistant requests and local correction data used to improve results within the app.</li>
+        </ul>
+        <div class="notice">This information is stored in Rhysen’s app container and is not sent to the Rhysen developer.</div>
+      </section>
+
+      <section class="policy-card">
+        <h2>Permissions and Apple services</h2>
+        <p class="secondary">Rhysen requests access only when needed for a feature you choose to use. You can change permissions at any time in iOS Settings.</p>
+        <div class="permission-list">
+          <div class="permission">
+            <strong>Location</strong>
+            <span>Used for optional work-arrival and work-departure geofencing, including automatic clock-in and clock-out features you enable.</span>
+          </div>
+          <div class="permission">
+            <strong>Microphone</strong>
+            <span>Used when you choose voice input. Rhysen does not retain microphone audio recordings.</span>
+          </div>
+          <div class="permission">
+            <strong>Speech recognition</strong>
+            <span>Used to convert your voice into text through Apple’s speech-recognition services. Processing may occur on-device or through Apple depending on device capabilities and system settings.</span>
+          </div>
+          <div class="permission">
+            <strong>Notifications</strong>
+            <span>Used to deliver task, reminder, habit, and work-related alerts that you configure.</span>
+          </div>
+          <div class="permission">
+            <strong>Maps and geocoding</strong>
+            <span>Addresses you enter may be submitted to Apple’s MapKit or geocoding services to find map coordinates and provide address suggestions.</span>
+          </div>
+        </div>
+        <p class="secondary" style="margin-top: 22px;">Apple services are governed by Apple’s privacy practices and your device settings.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>Collection, tracking, and sharing</h2>
+        <p>Rhysen does not use advertising SDKs, third-party analytics SDKs, or cross-app tracking. Rhysen does not sell personal information.</p>
+        <p>Rhysen does not share your app content with the developer or data brokers. Information processed by Apple system services is handled according to Apple’s applicable terms and privacy policies.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>Retention and deletion</h2>
+        <p>Information remains on your device until you delete it within Rhysen, reset the applicable feature, or remove the app. Deleting Rhysen removes information from its local app container.</p>
+        <p>Apple-managed device backups may retain app data according to your iCloud or device-backup settings. Rhysen does not control the retention of those backups.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>Security</h2>
+        <p>Rhysen relies on Apple’s app sandbox and iOS security protections to isolate locally stored information. No method of storage is completely risk-free, so keeping your device software and passcode protections up to date is recommended.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>Children’s privacy</h2>
+        <p>Rhysen is not directed specifically to children and does not knowingly collect personal information from children through a developer-controlled service.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>Changes to this policy</h2>
+        <p>This policy may be updated as Rhysen’s features or data practices change. The effective date at the top of this page will be updated when revisions are published.</p>
+      </section>
+
+      <section class="policy-card" id="contact">
+        <h2>Contact</h2>
+        <p>Questions about this Privacy Policy can be submitted through the Rhysen privacy repository.</p>
+        <p><a href="https://github.com/isaacrhys/rhysen-privacy/issues" rel="noopener noreferrer">Open a privacy question on GitHub&nbsp;↗</a></p>
+        <p class="secondary">Do not include private or sensitive personal information in a public GitHub issue.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Rhysen. Privacy Policy.</p>
+  </footer>
+</body>
+</html>
