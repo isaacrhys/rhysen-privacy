@@ -498,7 +498,7 @@
       <p class="eyebrow">Your data, clearly explained</p>
       <h1>Privacy comes first.</h1>
       <p class="hero-copy">Rhysen is designed to organize your day without building a profile about you. Your personal app data stays under your control.</p>
-      <p class="updated">Effective August 25, 2026</p>
+      <p class="updated">Effective October 21, 2026</p>
     </header>
 
     <section class="summary" aria-label="Privacy summary">
@@ -523,7 +523,7 @@
       <section class="policy-card">
         <h2>Overview</h2>
         <p>This Privacy Policy explains how the Rhysen iOS app handles information when you use its task, reminder, habit, work-planning, and location-based features.</p>
-        <p>Rhysen does not require an account and does not operate a developer-controlled server that receives your tasks, habits, work information, or location history.</p>
+        <p>Rhysen does not require a Rhysen account. Its planning features do not send your tasks, habits, work information, or location history to a developer-operated server. Optional support requests are different: information you choose to submit through the support form is delivered to the Rhysen developer as explained below.</p>
       </section>
 
       <section class="policy-card">
@@ -535,7 +535,7 @@
           <li>Work schedules, job names, pay settings, commute details, addresses, and geofence coordinates.</li>
           <li>Appearance, notification, and other app preferences.</li>
         </ul>
-        <div class="notice">This information is stored in Rhysen’s app container and is not sent to the Rhysen developer.</div>
+        <div class="notice">Planning data is stored in Rhysen’s app container. Supported data is also sent to your private iCloud storage if you enable Sync. It is not sent to the Rhysen developer unless you choose to include it in a support request.</div>
       </section>
 
       <section class="policy-card">
@@ -544,33 +544,47 @@
         <div class="permission-list">
           <div class="permission">
             <strong>Location</strong>
-            <span>Used for optional work-arrival and work-departure geofencing, including automatic clock-in and clock-out features you enable.</span>
+            <span>With your permission, used to detect workplace arrivals and departures, remind you to clock out when you arrive home, and support automatic clock-in and clock-out features you enable. Always location access allows enabled work geofencing to operate in the background when Rhysen is not open. You can disable Work geofencing in Rhysen or change location access in iPhone Settings. Rhysen does not send a continuous route or live-location feed to the developer.</span>
           </div>
           <div class="permission">
             <strong>Notifications</strong>
-            <span>Used to deliver task, reminder, habit, and work-related alerts that you configure.</span>
+            <span>Used to deliver task, reminder, habit, and work-related alerts that you configure. Alerts may display task titles, habit names, or work details on your Lock Screen; you can change notification permissions and preview visibility in iPhone Settings. iCloud also uses Apple’s push service to signal data changes; Rhysen does not send a push token to a developer-operated notification server.</span>
           </div>
           <div class="permission">
             <strong>Maps and geocoding</strong>
-            <span>Addresses you enter may be submitted to Apple’s MapKit or geocoding services to find map coordinates and provide address suggestions.</span>
+            <span>Address-search text and relevant starting points and destinations are sent to Apple’s MapKit, geocoding, or directions services for address suggestions, coordinates, commute estimates, and directions.</span>
           </div>
         </div>
-        <p class="secondary" style="margin-top: 22px;">Apple services are governed by Apple’s privacy practices and your device settings.</p>
+        <p class="secondary" style="margin-top: 22px;">Apple services are governed by <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" rel="noopener noreferrer">Apple’s Privacy Policy</a>, service-specific privacy information, and your device settings.</p>
+      </section>
+
+      <section class="policy-card">
+        <h2>Optional iCloud Sync and Premium purchases</h2>
+        <p>If you enable iCloud Sync, Rhysen sends tasks, reminders, habits, completion and session history, work pay-rate history, job details, and saved commute addresses to your private CloudKit database in your Apple Account. Apple stores and transfers this information between your devices. The Rhysen developer does not receive access to your private database.</p>
+        <p>Notification and location permissions and geofencing automation remain device-specific. Sync is optional. Turning it off retains local data and does not erase the existing iCloud copy. To remove the app’s iCloud data, use Apple’s iCloud storage controls. Sync retains item identifiers, revision values, and timestamps as deletion markers so offline devices do not restore deleted items. These markers remain until the app’s cloud data is removed. Devices that retain local planning data can upload it again if you re-enable Sync after clearing cloud storage.</p>
+        <p>Premium subscriptions use Apple’s App Store purchasing system. Apple handles payment information. Rhysen reads and verifies Apple-provided transaction information, such as the purchased product, subscription expiration, and revocation status, on your device to enable Premium. Rhysen does not send a purchase receipt to a developer-operated verification server and does not receive your payment-card details. You can restore purchases in the Premium screen and manage or cancel your subscription in Apple Account subscription settings.</p>
       </section>
 
       <section class="policy-card">
         <h2>Collection, tracking, and sharing</h2>
         <p>Rhysen does not use advertising SDKs, third-party analytics SDKs, or cross-app tracking. Rhysen does not sell personal information.</p>
-        <p>Rhysen does not share your app content with the developer or data brokers. Information processed by Apple system services is handled according to Apple’s applicable terms and privacy policies.</p>
+        <p>Rhysen does not automatically send your planning content to the developer or to data brokers. Content you voluntarily include in a support request is delivered to the developer. Apple system services and the support provider process information as described in this policy and their respective privacy policies.</p>
         <h3>Support form submissions</h3>
-        <p>If you contact Rhysen using the support form below, the email address, device information, issue category, and comments you provide are transmitted to and processed by Formspree so the developer can receive and respond to your request.</p>
-        <p>Support submissions are used only to investigate and respond to the request. They are generally retained for no longer than 90 days after resolution unless longer retention is reasonably necessary for security, fraud prevention, or legal compliance.</p>
+        <p>If you contact Rhysen using the support form below, your email address, request category, message, and any optional device or operating-system information you enter are transmitted to Formspree and delivered to the developer’s support mailbox. Formspree may also process technical request information, including your IP address, browser type, and referring page, for service operation and fraud prevention. Support information may be processed in the United States and other countries where Formspree operates. See <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Formspree’s Privacy Policy</a>.</p>
+        <p>The developer uses support submissions to investigate and respond to your request and maintain relevant support correspondence. There is no automatic 90-day deletion schedule. Support messages may remain in Formspree and the developer’s support mailbox after the request is resolved. You can request deletion using the form below; information needed for a legal obligation, security issue, or unresolved dispute may need to be retained. Formspree’s own service logs and backups are subject to its retention practices.</p>
       </section>
 
       <section class="policy-card">
         <h2>Retention and deletion</h2>
-        <p>Information remains on your device until you delete it within Rhysen, reset the applicable feature, or remove the app. Deleting Rhysen removes information from its local app container.</p>
+        <p>Planning data remains on your device while you use Rhysen. Deleting a task can retain completed or earlier recurring occurrences when the action says so. Deleting a habit archives it and preserves its history; it is not a request to erase all habit data. Legacy migration files and recovery copies may also retain earlier data. Removing the app using Delete App removes its local app container; offloading the app can retain its data. Removing the app does not delete previously synced iCloud data, erase support correspondence, or cancel an App Store subscription.</p>
         <p>Apple-managed device backups may retain app data according to your iCloud or device-backup settings. Rhysen does not control the retention of those backups.</p>
+      </section>
+
+      <section class="policy-card" id="privacy-choices">
+        <h2>Your privacy choices and requests</h2>
+        <p>You can use local planning without enabling iCloud Sync or location automation. Turn Sync off in Rhysen’s Settings → Permissions to stop further syncing from this device. Turn off geofencing in Work settings or revoke location permission in iPhone Settings. These choices do not erase data already stored.</p>
+        <p>To remove all stored planning data, first turn Sync off on every device using Rhysen, remove Rhysen’s stored data through Apple’s iCloud storage controls if you enabled Sync, and delete the app and its local data from those devices. Manage any retained device backups separately. The developer cannot access or erase your private CloudKit database for you.</p>
+        <p>For access, correction, or deletion requests concerning support information held by the developer, use the <a href="#contact">contact form</a> and choose Privacy request. Include the email address used for the original request and the action you want; do not send identity documents, passwords, or sensitive planning data. The developer may ask for enough information to verify the request. Rights and exceptions depend on applicable law. For information held independently by Apple or Formspree, use the privacy contact options in their policies.</p>
       </section>
 
       <section class="policy-card">
@@ -591,7 +605,7 @@
       <section class="policy-card" id="contact">
         <p class="eyebrow">Contact Rhysen</p>
         <h2>How can we help?</h2>
-        <p class="secondary">Send a bug report, crash report, feature request, or privacy question. Your destination email is kept private by Formspree.</p>
+        <p class="secondary">Contact the Rhysen developer about support or a privacy request. Device details are optional, especially for privacy requests. The developer’s receiving email address is not displayed publicly by this form.</p>
 
           <form class="support-form" action="https://formspree.io/f/maewgpyw" method="POST">
           <input type="hidden" name="form_name" value="Rhysen Support">
@@ -609,13 +623,14 @@
                 <option value="Bug">Bug</option>
                 <option value="Crash">Crash</option>
                 <option value="Feature request">Feature request</option>
+                <option value="Privacy request">Privacy request</option>
                 <option value="Other">Other</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="device-model">Device model <span class="required" aria-hidden="true">*</span></label>
-              <input id="device-model" name="device_model" type="text" list="device-models" autocomplete="off" placeholder="Choose or type your model" required>
+              <label for="device-model">Device model (optional)</label>
+              <input id="device-model" name="device_model" type="text" list="device-models" autocomplete="off" placeholder="Choose or type your model">
               <datalist id="device-models">
                 <option value="iPhone 17 series"></option>
                 <option value="iPhone 16 series"></option>
@@ -636,8 +651,8 @@
             </div>
 
             <div class="field">
-              <label for="os-version">iOS or iPadOS version <span class="required" aria-hidden="true">*</span></label>
-              <select id="os-version" name="os_version" required>
+              <label for="os-version">iOS or iPadOS version (optional)</label>
+              <select id="os-version" name="os_version">
                 <option value="" selected disabled>Choose a version</option>
                 <option value="iOS 26">iOS 26</option>
                 <option value="iOS 18">iOS 18</option>
